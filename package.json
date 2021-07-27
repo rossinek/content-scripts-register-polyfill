@@ -35,6 +35,7 @@
 		"build": "tsc",
 		"demo:watch": "parcel watch test/demo-extension/* --dist-dir test/dist --no-cache --no-hmr --detailed-report 0",
 		"demo:build": "parcel build test/demo-extension/* --dist-dir test/dist --no-cache --detailed-report 0 --no-optimize",
+		"prepare": "tsc --sourceMap false",
 		"prepack": "tsc --sourceMap false",
 		"test": "xo && tsc --noEmit && npm run jest",
 		"prejest": "npm run demo:build",
